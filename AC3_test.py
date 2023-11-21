@@ -42,7 +42,7 @@ for i in range(3):
 
     label = " ".join(["Resistance =", str(resistances[i]), "Ohm"])
     print("testing",x_fit[np.where(y_fit==max(y_fit))[0][0]])
-    max_y_fit = "".join(["f_res =", f"{x_fit[np.where(y_fit==max(y_fit))[0][0]]:.0f}", "Hz"])
+    max_y_fit = "".join(["f_res =", f"{x_fit[np.where(y_fit==max(y_fit))[0][0]]:.3f}", "Hz"])
     # plot the graph
     plot.scatter(x[i], y[i], label=label, color=colors[0])
     plot.plot(x_fit, y_fit, color=colors[0], label=max_y_fit)
